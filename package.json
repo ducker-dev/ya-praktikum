@@ -2,30 +2,44 @@
   "name": "ya-praktikum",
   "version": "0.0.1",
   "private": true,
-  "homepage":"https://ducker-dev.github.io/ya-praktikum",
+  "homepage": "https://ducker-dev.github.io/ya-praktikum",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix",
+    "type-check": "tsc",
+    "prepare": "husky install"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "effector": "^22.8.6",
+    "effector-react": "^22.5.3",
+    "effector-root": "^1.4.0",
     "gh-pages": "^6.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "effector-logger": "^0.14.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.7"
   },
   "browserslist": {
     "production": [
