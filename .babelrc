@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "^effector$": "effector-root"
+        }
+      }
+    ],
+    [
+      "@emotion/babel-plugin",
+      {
+        "autoLabel": "dev-only"
+      }
+    ]
+  ]
+}

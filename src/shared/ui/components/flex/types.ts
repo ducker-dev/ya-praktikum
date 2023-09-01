@@ -7,5 +7,9 @@ export interface IFlexProps extends IBaseComponent {
   flexWrap?: CSSProperties['flexWrap']
   justifyContent?: CSSProperties['justifyContent']
   alignItems?: CSSProperties['alignItems']
+  alignSelf?: CSSProperties['alignSelf']
   gap?: CSSProperties['gap']
+  margin?: CSSProperties['margin']
+  padding?: CSSProperties['padding']
+  width?: CSSProperties['width']
 }

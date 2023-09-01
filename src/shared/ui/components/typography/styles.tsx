@@ -16,41 +16,27 @@ export const Typography = styled('div')<
     s,
     xs,
     color,
-    center,
-    uppercase,
+    align,
+    transform,
   } = props
 
   const getTypographyStyles = (
     props: TTextCustomization,
   ): Record<string, string | number> => {
-    const { variant, color, center, uppercase } = props
+    const { variant, color, align, transform } = props
 
     return {
-      ...(variant !== undefined ? texts[variant] : {}),
-      ...(color !== undefined ? { color: colors[color] } : {}),
-      ...(center !== undefined ? { textAlign: center ? 'center' : 'initial' } : {}),
-      ...(uppercase !== undefined
-        ? { textTransform: uppercase ? 'uppercase' : 'initial' }
-        : {}),
+      ...(variant !== undefined && texts[variant]),
+      ...(color !== undefined && { color: colors[color] }),
+      ...(align !== undefined && { textAlign: align }),
+      ...(transform !== undefined && { textTransform: transform }),
     }
   }
 
   return {
-    ...getTypographyStyles({ variant, color, center, uppercase }),
-    ...(m
-      ? {
-          [breakpoints.m.media.down]: getTypographyStyles(m),
-        }
-      : {}),
-    ...(s
-      ? {
-          [breakpoints.s.media.down]: getTypographyStyles(s),
-        }
-      : {}),
-    ...(xs
-      ? {
-          [breakpoints.xs.media.down]: getTypographyStyles(xs),
-        }
-      : {}),
+    ...getTypographyStyles({ variant, color, align, transform }),
+    ...(m && { [breakpoints.m.media.down]: getTypographyStyles(m) }),
+    ...(s && { [breakpoints.s.media.down]: getTypographyStyles(s) }),
+    ...(xs && { [breakpoints.xs.media.down]: getTypographyStyles(xs) }),
   }
 })

@@ -18,4 +18,9 @@ module.exports = {
     'react/display-name': 'off',
     'react/react-in-jsx-scope': 'off',
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 
 import * as S from './styles'
 import { ITypographyProps } from './types'
@@ -9,8 +9,8 @@ export const Typography: FC<ITypographyProps> = props => {
     variant = 't_15_regular',
     as = 'div',
     color = 'secondary_8',
-    uppercase = false,
-    center = false,
+    transform = 'none',
+    align = 'left',
     ...rest
   } = props
 
@@ -19,8 +19,8 @@ export const Typography: FC<ITypographyProps> = props => {
       variant={variant}
       as={as}
       color={color}
-      center={center}
-      uppercase={uppercase}
+      align={align}
+      transform={transform}
       {...rest}
     >
       {children}

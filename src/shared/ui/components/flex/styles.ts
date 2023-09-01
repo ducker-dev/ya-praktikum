@@ -3,7 +3,17 @@ import styled from '@emotion/styled'
 import { IFlexProps } from './types'
 
 export const Flex = styled('div')<IFlexProps>(props => {
-  const { flexDirection, flexWrap, justifyContent, alignItems, gap } = props
+  const {
+    flexDirection,
+    flexWrap,
+    justifyContent,
+    alignItems,
+    alignSelf,
+    gap,
+    margin,
+    padding,
+    width,
+  } = props
 
   return {
     display: 'flex',
@@ -11,6 +21,10 @@ export const Flex = styled('div')<IFlexProps>(props => {
     flexWrap,
     justifyContent,
     alignItems,
+    alignSelf,
     gap,
+    margin,
+    padding,
+    width,
   }
 })
