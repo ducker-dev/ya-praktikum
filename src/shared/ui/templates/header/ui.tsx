@@ -15,6 +15,9 @@ export const Header = () => {
         <Button variant='simple_outline' color='secondary_8' to={ROUTES.JS_GAME} disabled>
           JS Game
         </Button>
+        <Button variant='simple_outline' color='secondary_8' to={ROUTES.ANSWERS}>
+          Ответы
+        </Button>
       </S.HContent>
     </S.Header>
   )
