@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ya-praktikum/static/css/main.58462fbc.css",
-    "main.js": "/ya-praktikum/static/js/main.ccfb7cef.js",
+    "main.js": "/ya-praktikum/static/js/main.8e2a6f30.js",
     "static/js/787.9b8af708.chunk.js": "/ya-praktikum/static/js/787.9b8af708.chunk.js",
     "static/media/old.png": "/ya-praktikum/static/media/old.d471c4b0f81ee2425b79.png",
     "static/media/cur.jpg": "/ya-praktikum/static/media/cur.d95803d139076103d95a.jpg",
     "index.html": "/ya-praktikum/index.html",
     "main.58462fbc.css.map": "/ya-praktikum/static/css/main.58462fbc.css.map",
-    "main.ccfb7cef.js.map": "/ya-praktikum/static/js/main.ccfb7cef.js.map",
+    "main.8e2a6f30.js.map": "/ya-praktikum/static/js/main.8e2a6f30.js.map",
     "787.9b8af708.chunk.js.map": "/ya-praktikum/static/js/787.9b8af708.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.ccfb7cef.js"
+    "static/js/main.8e2a6f30.js"
   ]
 }
